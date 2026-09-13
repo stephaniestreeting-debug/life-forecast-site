@@ -63,18 +63,7 @@
 .see-how:hover{ color:#C6853A; }
 @media (max-width: 720px){ .phone-grid{ grid-template-columns:repeat(2, 1fr); gap:16px 14px; } }
 
-  /* ===== Coming later ===== */
-  .coming{ margin-top:76px; padding-top:56px; border-top:1px solid var(--line, rgba(29,36,32,0.14)); }
-.coming-form{ display:flex; gap:10px; flex-wrap:wrap; max-width:440px; margin:0 0 10px; }
-.coming-input{ flex:1 1 220px; min-width:0; padding:12px 16px; border-radius:999px; border:1px solid var(--line, rgba(29,36,32,0.14)); background:var(--cream-deep); font-family:"Work Sans", sans-serif; font-size:14px; color:var(--ink); }
-.coming-input::placeholder{ color:var(--ink-soft); }
-.coming-input:focus{ outline:none; border-color:#C6853A; }
-.coming-btn{ display:inline-flex; align-items:center; justify-content:center; background:var(--forest); color:var(--cream); font-size:14px; font-weight:500; padding:12px 22px; border-radius:999px; border:none; cursor:pointer; white-space:nowrap; }
-.coming-btn:hover{ background:var(--forest-deep); }
-.coming-btn:disabled{ opacity:0.6; cursor:default; }
-.coming-note{ font-size:12px; color:var(--ink-soft); margin:0; }
-.coming-thanks{ font-size:14px; color:var(--ink); }
-.coming-error{ font-size:12px; color:#b23b3b; margin:8px 0 0; }
+ 
 
   /* ===== FAQ ===== */
   .faq-section{ margin-top:76px; padding-top:56px; border-top:1px solid var(--line); }
@@ -82,7 +71,7 @@
 .faq-item h3{ font-size:17px; margin-bottom:8px; }
 .faq-item p{ font-size:15px; }
 
-  }
+  
   .founder-signature{
     font-family:'Caveat', cursive;
     font-size:34px;
@@ -273,72 +262,7 @@
   .pricing-notes p{font-size:14.5px;}
   .pricing-notes strong{color:var(--forest);}
 
-  /* HORIZONS */
-  .horizons{padding:96px 0; position:relative;}
-  .horizons-inner{
-    display:grid; grid-template-columns:0.85fr 1.6fr; gap:56px; align-items:center;
-  }
-  .horizons h2{font-size:36px; margin-top:14px;}
-  .horizons p.lead{margin-top:18px; max-width:38ch;}
-  .horizon-phones{
-    display:grid; grid-template-columns:repeat(4,1fr); gap:20px;
-  }
-  .phone{
-    filter:drop-shadow(0 20px 40px rgba(28,36,25,0.28));
-  }
-  .phone img{width:100%; height:auto; aspect-ratio:389/825;}
-  .phone-caption{text-align:center; margin-top:14px; font-size:13px; font-weight:600; color:var(--forest);}
-
-  /* COMING LATER */
-  .coming{padding:72px 0;}
-  .coming .kicker{
-    font-size:13px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase;
-    color:var(--coffee); margin-bottom:12px;
-  }
-  .coming h2{font-size:32px; max-width:22ch;}
-  .coming p.lead{margin-top:16px; max-width:52ch; font-size:16px;}
-  .coming-form{display:flex; gap:10px; flex-wrap:wrap; max-width:440px; margin:28px 0 10px;}
-  .coming-input{
-    flex:1 1 220px; min-width:0; padding:12px 18px; border-radius:999px;
-    border:1px solid var(--line); background:var(--cream-deep);
-    font-family:'Public Sans', sans-serif; font-size:14px; color:var(--ink);
-  }
-  .coming-input::placeholder{color:var(--ink-soft);}
-  .coming-input:focus{outline:none; border-color:var(--coffee);}
-  .coming-btn{white-space:nowrap;}
-  .coming-note{font-size:12.5px; color:var(--ink-soft);}
-  .coming-thanks{font-size:14px; color:var(--forest); font-weight:600;}
-  .coming-error{font-size:12.5px; color:#b23b3b; margin-top:8px;}
-
-  /* NOT EVERY DAY */
-  .dark-section{
-    background:var(--forest-deep);
-    color:var(--cream);
-    padding:88px 0;
-  }
-  .dark-section h2{color:var(--cream); font-size:32px; max-width:16ch;}
-  .dark-section p.lead{color:rgba(245,240,230,0.72); max-width:42ch; margin-top:16px;}
-  .dark-grid{
-    display:grid; grid-template-columns:repeat(4,1fr);
-    gap:28px;
-    margin-top:48px;
-    align-items:start;
-  }
-  .dark-note{
-    color:rgba(245,240,230,0.55); font-size:13.5px; max-width:56ch;
-    margin-top:36px; padding-top:24px; border-top:1px solid rgba(245,240,230,0.14);
-  }
-  .dark-item h3{
-    font-family:'Public Sans',sans-serif; font-size:15px; font-weight:600;
-    color:var(--cream); margin-bottom:8px;
-  }
-  .dark-item p{color:rgba(245,240,230,0.65); font-size:14px;}
-  .dark-item .icon{
-    width:40px; height:40px; border-radius:50%;
-    background:rgba(245,240,230,0.08);
-    display:flex; align-items:center; justify-content:center;
-    margin-bottom:14px;
-  }
+  
   .dark-item .icon svg{width:18px; height:18px; stroke:var(--cream);}
   .testimonial{
     background:rgba(245,240,230,0.06);
@@ -543,48 +467,35 @@
 </section>
 
 <section class="horizons" id="horizons">
-  <div class="wrap horizons-inner">
-    <div>
-      <div class="kicker" style="font-size:13px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--coffee);">Four horizons</div>
-      <h2>Day. Week.<br>Month. Year.</h2>
-      <p class="lead">Same forecast, four ways to see it — the room in your week shows up the same way, however you're looking at it.</p>
-      <a href="https://app.lifeforecast.com.au" class="btn btn-outline" style="margin-top:24px;">See how it works</a>
-    </div>
-    <div>
-      <div class="horizon-phones">
-        <div>
-          <div class="phone"><img src="images/view-day.png" alt="Life Forecast day view" loading="lazy"></div>
-          <div class="phone-caption">Day</div>
-        </div>
-        <div>
-          <div class="phone"><img src="images/view-week.png" alt="Life Forecast week view" loading="lazy"></div>
-          <div class="phone-caption">Week</div>
-        </div>
-        <div>
-          <div class="phone"><img src="images/view-month.png" alt="Life Forecast month view" loading="lazy"></div>
-          <div class="phone-caption">Month</div>
-        </div>
-        <div>
-          <div class="phone"><img src="images/view-year.png" alt="Life Forecast year view" loading="lazy"></div>
-          <div class="phone-caption">Year</div>
-        </div>
-      </div>
-    </div>
+  <p class="h-eyebrow">Four horizons</p>
+  <h2 class="h-title">Day. Week. Month. Year.</h2>
+  <p class="h-sub">Same forecast, four ways to see it — the room in your week shows up the same way, however you're looking at it.</p>
+
+  <div class="phone-grid">
+    <figure class="phone-card">
+      <div class="phone"><img src="images/view-day.png" alt="Day view of Life Forecast" loading="lazy" /></div>
+      <figcaption>Day</figcaption>
+    </figure>
+
+    <figure class="phone-card">
+      <div class="phone"><img src="images/view-week.png" alt="Week view of Life Forecast" loading="lazy" /></div>
+      <figcaption>Week</figcaption>
+    </figure>
+
+    <figure class="phone-card">
+      <div class="phone"><img src="images/view-month.png" alt="Month view of Life Forecast" loading="lazy" /></div>
+      <figcaption>Month</figcaption>
+    </figure>
+
+    <figure class="phone-card">
+      <div class="phone"><img src="images/view-year.png" alt="Year view of Life Forecast" loading="lazy" /></div>
+      <figcaption>Year</figcaption>
+    </figure>
   </div>
+
+  <a class="see-how" href="https://app.lifeforecast.com.au">See how it works →</a>
 </section>
 
-<section class="coming" id="coming-later">
-  <div class="wrap">
-    <div class="kicker">Coming later</div>
-    <h2>Some people want the forecast.<br>Others want the data.</h2>
-    <p class="lead">We're exploring a second way to see your week — capacity scores and trend lines instead of heavy and light. No app yet, just an idea we're testing. Want to know if it happens?</p>
-    <form class="coming-form" id="comingForm">
-      <input type="email" class="coming-input" placeholder="your@email.com" aria-label="Email address" required>
-      <button type="submit" class="btn btn-primary coming-btn">Notify me</button>
-    </form>
-    <p class="coming-note" id="comingNote">One email, only if it ships. Nothing else.</p>
-  </div>
-</section>
 
 <section class="dark-section" id="calmer-you">
   <div class="wrap">
@@ -714,65 +625,7 @@
     });
   });
 
-  // "Coming later" waitlist form.
-  // Not wired to a real backend yet — set COMING_LATER_ENDPOINT once you have
-  // somewhere for these emails to go (a Vercel API route, Formspree,
-  // Mailchimp, ConvertKit, Buttondown, etc). Until then, submitting shows
-  // the "thanks" message without actually saving anything.
-  (function () {
-    const COMING_LATER_ENDPOINT = ""; // e.g. "/api/subscribe" — leave blank until ready
-    const comingForm = document.getElementById('comingForm');
-    if (!comingForm) return;
-
-    comingForm.addEventListener('submit', function (e) {
-      e.preventDefault();
-      const input = comingForm.querySelector('.coming-input');
-      const email = input && input.value.trim();
-      if (!email) return;
-
-      const btn = comingForm.querySelector('.coming-btn');
-      if (btn) {
-        btn.disabled = true;
-        btn.textContent = 'Saving…';
-      }
-
-      const done = function () {
-        comingForm.innerHTML = '<span class="coming-thanks">Thanks — we\'ll let you know if it ships.</span>';
-      };
-      const failed = function () {
-        if (btn) {
-          btn.disabled = false;
-          btn.textContent = 'Notify me';
-        }
-        const note = document.getElementById('comingNote');
-        if (note) {
-          const err = document.createElement('p');
-          err.className = 'coming-error';
-          err.textContent = 'Something went wrong — please try again.';
-          note.insertAdjacentElement('afterend', err);
-        }
-      };
-
-      if (!COMING_LATER_ENDPOINT) {
-        // Not wired up yet — show the confirmation but don't pretend the
-        // email went anywhere. Remove this branch once the endpoint is set.
-        done();
-        return;
-      }
-
-      fetch(COMING_LATER_ENDPOINT, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email: email, source: 'coming-later' }),
-      })
-        .then(function (res) {
-          if (!res.ok) throw new Error('bad status');
-          done();
-        })
-        .catch(failed);
-    });
-  })();
-</script>
+  
 
 </body>
 </html>
