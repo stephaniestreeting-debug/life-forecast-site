@@ -47,7 +47,104 @@
   margin:0 auto;
   padding:0;
 }
+/* ===== Forecast change ===== */
+.forecast-change{
+  padding:88px 0;
+  margin-top:20px;
+  background:var(--cream-deep);
+}
 
+.forecast-change-copy .kicker{
+  font-size:13px;
+  font-weight:600;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--coffee);
+  margin-bottom:12px;
+}
+
+.forecast-change-copy h2{
+  font-size:36px;
+  max-width:22ch;
+}
+
+.forecast-change-copy p{
+  margin-top:18px;
+  max-width:58ch;
+  font-size:16px;
+}
+
+.forecast-shift{
+  margin-top:52px;
+  display:grid;
+  grid-template-columns:1fr auto 1fr auto 1fr;
+  align-items:center;
+  gap:22px;
+}
+
+.forecast-state,
+.forecast-action{
+  min-height:150px;
+  padding:24px;
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  background:var(--cream);
+}
+
+.forecast-day,
+.forecast-action-label{
+  font-family:'JetBrains Mono',monospace;
+  font-size:10px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--ink-soft);
+}
+
+.forecast-level{
+  margin-top:18px;
+  font-family:'Fraunces',serif;
+  font-size:30px;
+  color:var(--forest);
+}
+
+.forecast-state p{
+  margin-top:6px;
+  font-size:13px;
+}
+
+.forecast-action{
+  background:var(--forest);
+  border-color:var(--forest);
+  color:var(--cream);
+}
+
+.forecast-action-label{
+  color:rgba(245,240,230,.65);
+}
+
+.forecast-action-item{
+  margin-top:18px;
+  font-family:'Fraunces',serif;
+  font-size:19px;
+  color:var(--cream);
+}
+
+.forecast-arrow{
+  font-size:24px;
+  color:var(--coffee);
+  text-align:center;
+}
+
+@media (max-width:720px){
+  .forecast-shift{
+    grid-template-columns:1fr;
+    gap:12px;
+  }
+
+  .forecast-arrow{
+    transform:rotate(90deg);
+  }
+}
   /* ===== Four horizons ===== */
   .horizons{ margin-top:76px; padding-top:56px; border-top:1px solid var(--line, rgba(29,36,32,0.14)); }
 .h-eyebrow{ font-family:"JetBrains Mono", monospace; font-size:11px; letter-spacing:0.16em; text-transform:uppercase; color:#C6853A; margin:0 0 14px; }
@@ -470,8 +567,8 @@
   <div class="wrap hero-inner">
     <div>
       <div class="hero-eyebrow">Plan · See · Live</div>
-      <h1>A calendar that shows<br>you where your week<br>has room.</h1>
-      <p class="lead">Not a to-do list. Not a wall of red overdue tasks. Life Forecast shows you where your week actually has room — for rest, for people you care about, for the things that matter. Try it free for 7 days, or unlock it straight away for a one-time A$9.99.</p>
+     <h1>See when your week<br>is becoming too much.</h1>
+      <p class="lead">Life Forecast helps you see the shape of your week at a glance — what's filling it, what's flexible, and where there's room for rest, people, or the things that matter to you.</p>
       <div class="hero-actions">
         <a href="https://app.lifeforecast.com.au" class="btn btn-primary">Try Life Forecast free →</a>
         <a href="https://app.lifeforecast.com.au/premium" class="btn btn-secondary">Skip the trial, unlock now — A$9.99 once</a>
@@ -484,7 +581,38 @@
     </div>
   </div>
 </section>
+<section class="forecast-change">
+  <div class="wrap">
+    <div class="forecast-change-copy">
+      <div class="kicker">See the difference</div>
+      <h2>Change the week.<br>Watch the forecast change.</h2>
+      <p>When a day starts looking too full, Life Forecast helps you see what's flexible — so you can move what can wait and make the week work better for you.</p>
+    </div>
 
+    <div class="forecast-shift">
+      <div class="forecast-state">
+        <div class="forecast-day">WEDNESDAY</div>
+        <div class="forecast-level packed">PACKED</div>
+        <p>Too much is happening.</p>
+      </div>
+
+      <div class="forecast-arrow">→</div>
+
+      <div class="forecast-action">
+        <div class="forecast-action-label">MOVE WHAT CAN WAIT</div>
+        <div class="forecast-action-item">Dinner with friends</div>
+      </div>
+
+      <div class="forecast-arrow">→</div>
+
+      <div class="forecast-state">
+        <div class="forecast-day">WEDNESDAY</div>
+        <div class="forecast-level full">FULL</div>
+        <p>There's a little more room.</p>
+      </div>
+    </div>
+  </div>
+</section>
 <section class="founder-note" id="story">
   <div class="wrap">
     <div class="kicker">From the founder</div>
