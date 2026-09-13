@@ -6,7 +6,7 @@
 <title>Life Forecast — A calendar that shows you where your week has room</title>
 <meta name="description" content="Life Forecast is a calendar that shows you where your week has room — for rest, for people you care about, for what matters. Try it free for 7 days, or unlock it now for a one-time A$9.99.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Public+Sans:wght@400;500;600;700&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+<link href="https://googleapis.com" rel="stylesheet">
 <style>
   :root{
     --cream: #F5F0E6;
@@ -47,6 +47,41 @@
     font-size:22px;
     color:var(--forest);
     line-height:1.3;
+  }
+
+  /* ===== Four horizons ===== */
+  .horizons{ margin-top:76px; padding-top:56px; border-top:1px solid var(--line, rgba(29,36,32,0.14)); }
+  .h-eyebrow{ font-family:"JetBrains Mono", monospace; font-size:11px; letter-spacing:0.16em; text-transform:uppercase; color:#C6853A; margin:0 0 14px; }
+  .h-title{ font-family:"Fraunces", serif; font-weight:500; font-size:clamp(24px, 3.4vw, 34px); line-height:1.15; letter-spacing:-0.01em; margin:0 0 12px; max-width:20ch; text-wrap:balance; color: var(--ink); }
+  .h-sub{ font-size:15px; line-height:1.55; color:var(--ink-soft); max-width:48ch; margin:0 0 36px; }
+  .phone-grid{ display:grid; grid-template-columns:repeat(4, 1fr); gap:20px; margin-bottom:28px; }
+  .phone-card{ margin:0; }
+  .phone{ filter: drop-shadow(0 16px 26px rgba(29,36,32,0.32)); }
+  .phone img{ display:block; width:100%; height:auto; aspect-ratio:389 / 825; }
+  .phone-card figcaption{ margin-top:10px; text-align:center; font-family:"JetBrains Mono", monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:var(--ink-soft); }
+  .see-how{ display:inline-block; font-size:14px; font-weight:500; color:var(--ink); text-decoration:underline; text-underline-offset:3px; }
+  .see-how:hover{ color:#C6853A; }
+  @media (max-width: 720px){ .phone-grid{ grid-template-columns:repeat(2, 1fr); gap:16px 14px; } }
+
+  /* ===== Coming later ===== */
+  .coming{ margin-top:76px; padding-top:56px; border-top:1px solid var(--line, rgba(29,36,32,0.14)); }
+  .coming-form{ display:flex; gap:10px; flex-wrap:wrap; max-width:440px; margin:0 0 10px; }
+  .coming-input{ flex:1 1 220px; min-width:0; padding:12px 16px; border-radius:999px; border:1px solid var(--line, rgba(29,36,32,0.14)); background:var(--cream-deep); font-family:"Work Sans", sans-serif; font-size:14px; color:var(--ink); }
+  .coming-input::placeholder{ color:var(--ink-soft); }
+  .coming-input:focus{ outline:none; border-color:#C6853A; }
+  .coming-btn{ display:inline-flex; align-items:center; justify-content:center; background:var(--forest); color:var(--cream); font-size:14px; font-weight:500; padding:12px 22px; border-radius:999px; border:none; cursor:pointer; white-space:nowrap; }
+  .coming-btn:hover{ background:var(--forest-deep); }
+  .coming-btn:disabled{ opacity:0.6; cursor:default; }
+  .coming-note{ font-size:12px; color:var(--ink-soft); margin:0; }
+  .coming-thanks{ font-size:14px; color:var(--ink); }
+  .coming-error{ font-size:12px; color:#b23b3b; margin:8px 0 0; }
+
+  /* ===== FAQ ===== */
+  .faq-section{ margin-top:76px; padding-top:56px; border-top:1px solid var(--line); }
+  .faq-item{ margin-bottom:28px; max-width:60ch; }
+  .faq-item h3{ font-size:17px; margin-bottom:8px; }
+  .faq-item p{ font-size:15px; }
+
   }
   .founder-signature{
     font-family:'Caveat', cursive;
