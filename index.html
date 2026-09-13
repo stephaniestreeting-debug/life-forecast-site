@@ -309,6 +309,60 @@
     background:rgba(245,240,230,0.3); border:none; cursor:pointer; padding:0;
   }
   .dot.active{background:var(--cream);}
+  /* ===== A CALMER YOU / DARK SECTION ===== */
+  .dark-section{
+    background:var(--forest-deep);
+    color:var(--cream);
+    padding:88px 0;
+    margin-top:0;
+  }
+  .dark-section h2{
+    color:var(--cream);
+    font-size:42px;
+    max-width:18ch;
+  }
+  .dark-section p.lead{
+    color:rgba(245,240,230,0.78);
+    max-width:58ch;
+    margin-top:18px;
+    font-size:17px;
+  }
+  .dark-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:28px;
+    margin-top:56px;
+  }
+  .dark-item .icon{
+    width:48px;
+    height:48px;
+    border-radius:50%;
+    background:rgba(245,240,230,0.08);
+    border:1px solid rgba(245,240,230,0.14);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:18px;
+  }
+  .dark-item h3{
+    font-family:'Public Sans',sans-serif;
+    font-size:16px;
+    font-weight:600;
+    color:var(--cream);
+    margin-bottom:8px;
+  }
+  .dark-item p{
+    font-size:14.5px;
+    color:rgba(245,240,230,0.68);
+  }
+  .dark-note{
+    margin-top:48px;
+    padding-top:24px;
+    border-top:1px solid rgba(245,240,230,0.14);
+    max-width:70ch;
+    font-size:13.5px;
+    color:rgba(245,240,230,0.55);
+  }
 
   /* TAKE WITH YOU / FOOTER TOP */
   .cta-strip{
@@ -387,7 +441,7 @@
 <body>
 
 <div class="platform-banner">
-  <p class="wrap">Life Forecast works right now in any browser — no app store needed. <strong>iOS and Android app store versions are coming soon.</strong></p>
+
 <p class="wrap">Life Forecast works right now in any browser — no app store needed. <strong>Google Play coming soon.</strong></p>
 
 <header>
@@ -466,7 +520,7 @@
         <h3>Light, steady, or heavy</h3>
         <p>Each day is marked by how full it actually is. Not scored. Not ranked.</p>
       </div>
-     
+     <div class="feature-card">
         <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6C19 16.5 12 21 12 21z"/></svg></div>
         <h3>Type it like you'd say it</h3>
         <p>"Dentist Thursday at 2pm." No rigid forms, no dropdowns.</p>
@@ -598,7 +652,7 @@
       </div>
       <div class="faq-item">
         <h3>Is it available on iPhone/Android?</h3>
-        <p>Life Forecast works right now in any browser, on any device — no app store needed. Dedicated iOS and Android app store versions are coming soon.</p>
+        <p>Life Forecast works right now in any browser, on any device — no app store needed. A Google Play app is coming soon.</p>
       </div>
       <div class="faq-item">
         <h3>What happens if I write something concerning?</h3>
