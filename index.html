@@ -158,7 +158,8 @@
 }
 
 .phone-card{
-  width:190px;
+  width:100%;
+  max-width:190px;
   margin:0 auto;
 }
 
@@ -183,7 +184,8 @@
 }
 .see-how{ display:inline-block; font-size:14px; font-weight:500; color:var(--ink); text-decoration:underline; text-underline-offset:3px; }
 .see-how:hover{ color:var(--coffee); }
-@media (max-width: 720px){ .phone-grid{ grid-template-columns:repeat(2, 1fr); gap:16px 14px; } }
+@media (max-width: 980px){ .phone-grid{ grid-template-columns:repeat(2, minmax(0, 190px)); gap:24px; } }
+@media (max-width: 720px){ .phone-grid{ grid-template-columns:repeat(2, minmax(0, 1fr)); gap:16px 14px; } }
 
  
 
@@ -529,7 +531,6 @@
       <p class="lead">Life Forecast helps you see the shape of your week at a glance — what's filling it, what's flexible, and where there's room for rest, people, or the things that matter to you. Move what's flexible, and watch the forecast change.</p>
       <div class="hero-actions">
         <a href="https://app.lifeforecast.com.au" class="btn btn-primary">Try Life Forecast free →</a>
-        <a href="https://app.lifeforecast.com.au/premium" class="btn btn-secondary">Skip the trial, unlock now — A$9.99 once</a>
       </div>
     </div>
     <div class="hero-photo-area">
@@ -539,6 +540,38 @@
     </div>
   </div>
 </section>
+<section class="horizons" id="horizons">
+
+  <div class="wrap">
+    <p class="h-eyebrow">Four horizons</p>
+<h2 class="h-title">Day. Week. Month. Year.</h2>
+<p class="h-sub">See the shape of your life from the day in front of you to the year ahead — without losing sight of what your week is asking of you.</p>
+  <div class="phone-grid">
+    <figure class="phone-card">
+      <div class="phone"><img src="images/view-day.png" alt="Day view of Life Forecast" loading="lazy" /></div>
+      <figcaption>Day</figcaption>
+    </figure>
+
+    <figure class="phone-card">
+      <div class="phone"><img src="images/view-week.png" alt="Week view of Life Forecast" loading="lazy" /></div>
+      <figcaption>Week</figcaption>
+    </figure>
+
+    <figure class="phone-card">
+      <div class="phone"><img src="images/view-month.png" alt="Month view of Life Forecast" loading="lazy" /></div>
+      <figcaption>Month</figcaption>
+    </figure>
+
+    <figure class="phone-card">
+      <div class="phone"><img src="images/view-year.png" alt="Year view of Life Forecast" loading="lazy" /></div>
+      <figcaption>Year</figcaption>
+    </figure>
+  </div>
+
+  <a class="see-how" href="https://app.lifeforecast.com.au">See how it works →</a>
+</div>
+</section>
+
 <section class="forecast-change">
   <div class="wrap">
     <div class="forecast-change-copy">
@@ -604,7 +637,7 @@
       </div>
       <div class="feature-card">
         <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M12 3c4 3 6 7 6 10a6 6 0 0 1-12 0c0-3 2-7 6-10z"/></svg></div>
-       <h3>Light, steady, or heavy</h3>
+       <h3>Open, Steady, Full or Heavy</h3>
         <p>Each day is shown by how full it actually is. There's no grade to chase, and no ranking.</p>
       </div>
      <div class="feature-card">
@@ -627,6 +660,7 @@
     <div class="kicker">Pricing</div>
     <h2>What this costs</h2>
     <p class="lead">Life Forecast is free to try, fully, for 7 days — every feature, every visual world. After that, a single A$9.99 payment unlocks it forever. No subscription. Nothing renews. Sign in and your purchase and your forecast both follow you to any device — even if you clear your browser or switch phones. If you'd rather not sign in, everything still stays saved right where you left it on this device, as long as you don't clear your browser data or delete the app.</p>
+    <p style="margin-top:24px;"><a href="https://app.lifeforecast.com.au/premium" class="btn btn-secondary">Unlock now — A$9.99 once</a></p>
     <div class="pricing-notes">
       <p><strong>Your data:</strong> Your schedule and entries are stored securely and privately. Sign in to sync across devices, or stay fully local on one device — your choice. The Clearing is the one place nothing is ever saved, by anyone, including us.</p>
       <p><strong>Refunds:</strong> You already get 7 days to try Life Forecast free before paying anything. If something's genuinely not working as described after you've purchased, email us within 14 days and we'll make it right.</p>
@@ -718,38 +752,6 @@
   </div>
 </section>
 
-
-<section class="horizons" id="horizons">
-
-  <div class="wrap">
-    <p class="h-eyebrow">Four horizons</p>
-<h2 class="h-title">Day. Week. Month. Year.</h2>
-<p class="h-sub">See the shape of your life from the day in front of you to the year ahead — without losing sight of what your week is asking of you.</p>
-  <div class="phone-grid">
-    <figure class="phone-card">
-      <div class="phone"><img src="images/view-day.png" alt="Day view of Life Forecast" loading="lazy" /></div>
-      <figcaption>Day</figcaption>
-    </figure>
-
-    <figure class="phone-card">
-      <div class="phone"><img src="images/view-week.png" alt="Week view of Life Forecast" loading="lazy" /></div>
-      <figcaption>Week</figcaption>
-    </figure>
-
-    <figure class="phone-card">
-      <div class="phone"><img src="images/view-month.png" alt="Month view of Life Forecast" loading="lazy" /></div>
-      <figcaption>Month</figcaption>
-    </figure>
-
-    <figure class="phone-card">
-      <div class="phone"><img src="images/view-year.png" alt="Year view of Life Forecast" loading="lazy" /></div>
-      <figcaption>Year</figcaption>
-    </figure>
-  </div>
-
-  <a class="see-how" href="https://app.lifeforecast.com.au">See how it works →</a>
-</div>
-</section>
 
 <section class="cta-strip" id="early-access"> <div class="wrap cta-strip-inner"> <div class="cup-slot" style="border-radius:50%; overflow:hidden;"> <img src="images/desk-photo.jpg" alt="A quiet desk with a plant and notebook, city skyline in the distance" style="width:100%;height:100%;object-fit:cover;"> </div> <div> <h2>Take Life Forecast with you.</h2> <p>Your day doesn't stay on your desk. Life Forecast is designed to be there when you plan your morning, check what's ahead, reflect on your day, or step back and look at the bigger picture.</p> </div> </div> </div> </section>
 
